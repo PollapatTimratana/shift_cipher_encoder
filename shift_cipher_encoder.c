@@ -76,58 +76,58 @@ int main(void) {
         
         else if (number_of_char == 2) {
 
-        scanf_return = scanf(" %c %c", &characters.one, &characters.two);
-        characters.three = 0;
-        characters.four = 0;
-        characters.five = 0;
-        characters.six = 0;
-        characters.seven = 0;
-        characters.eight = 0;
+            scanf_return = scanf(" %c %c", &characters.one, &characters.two);
+            characters.three = 0;
+            characters.four = 0;
+            characters.five = 0;
+            characters.six = 0;
+            characters.seven = 0;
+            characters.eight = 0;
     
-        if (scanf_return != 2) {
-            printf("You did not enter 2 characters.\n");
-            return 1;
+            if (scanf_return != 2) {
+                printf("You did not enter 2 characters.\n");
+                return 1;
         }
     }
         
         else if (number_of_char == 3) {
 
-        scanf_return = scanf(" %c %c %c", &characters.one, &characters.two, &characters.three);
-        characters.four = 0;
-        characters.five = 0;
-        characters.six = 0;
-        characters.seven = 0;
-        characters.eight = 0;
+            scanf_return = scanf(" %c %c %c", &characters.one, &characters.two, &characters.three);
+            characters.four = 0;
+            characters.five = 0;
+            characters.six = 0;
+            characters.seven = 0;
+            characters.eight = 0;
 
-        if (scanf_return != 3) {
-            printf("You did not enter 3 character.\n");
-            return 1;
+            if (scanf_return != 3) {
+                printf("You did not enter 3 character.\n");
+                return 1;
         }
     }
         
         else if (number_of_char == 4) {
 
-        scanf_return = scanf(" %c %c %c %c", &characters.one, &characters.two, &characters.three, &characters.four);
-        characters.five = 0;
-        characters.six = 0;
-        characters.seven = 0;
-        characters.eight = 0;
-        if (scanf_return != 4) {
-            printf("You did not enter 4 character.\n");
-            return 1;
-        }
+            scanf_return = scanf(" %c %c %c %c", &characters.one, &characters.two, &characters.three, &characters.four);
+            characters.five = 0;
+            characters.six = 0;
+            characters.seven = 0;
+            characters.eight = 0;
+            if (scanf_return != 4) {
+                printf("You did not enter 4 character.\n");
+                return 1;
+            }
         }
        
         else if (number_of_char == 5) {
 
-        scanf_return = scanf(" %c %c %c %c %c", &characters.one, &characters.two, &characters.three, &characters.four, &characters.five);
-        characters.six = 0;
-        characters.seven = 0;
-        characters.eight = 0;
+            scanf_return = scanf(" %c %c %c %c %c", &characters.one, &characters.two, &characters.three, &characters.four, &characters.five);
+            characters.six = 0;
+            characters.seven = 0;
+            characters.eight = 0;
 
-        if (scanf_return != 5) {
-            printf("You did not enter 5 character.\n");
-            return 1;
+            if (scanf_return != 5) {
+                printf("You did not enter 5 character.\n");
+                return 1;
         }
         }
         
