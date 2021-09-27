@@ -21,22 +21,11 @@ struct character_set {
     char eight; 
 };
 
-struct turn_to_int {
-    char one;
-    char two;
-    char three;
-    char four;
-    char five;
-    char six;
-    char seven;
-    char eight; 
-};
-
 int main(void) {
 
     int number_of_char;
     struct character_set characters;
-    struct turn_to_int to_int; 
+    struct character_set to_int; 
     int scanf_number_of_char; 
     int scanf_return;
     int shift;
@@ -52,7 +41,6 @@ int main(void) {
                 printf("You did not enter a number 1 to 8.\n");
                 return 1;
             }
-
         printf("\n");
         printf("Enter %d character: ", number_of_char);
 
@@ -89,7 +77,6 @@ int main(void) {
                 return 1;
         }
     }
-        
         else if (number_of_char == 3) {
 
             scanf_return = scanf(" %c %c %c", &characters.one, &characters.two, &characters.three);
@@ -104,7 +91,6 @@ int main(void) {
                 return 1;
         }
     }
-        
         else if (number_of_char == 4) {
 
             scanf_return = scanf(" %c %c %c %c", &characters.one, &characters.two, &characters.three, &characters.four);
@@ -117,7 +103,6 @@ int main(void) {
                 return 1;
             }
         }
-       
         else if (number_of_char == 5) {
 
             scanf_return = scanf(" %c %c %c %c %c", &characters.one, &characters.two, &characters.three, &characters.four, &characters.five);
@@ -128,48 +113,48 @@ int main(void) {
             if (scanf_return != 5) {
                 printf("You did not enter 5 character.\n");
                 return 1;
-        }
+            }
         }
         
         else if (number_of_char == 6) {
 
-        scanf_return = scanf(" %c %c %c %c %c %c", &characters.one, &characters.two, &characters.three, &characters.four, &characters.five, &characters.six);
-        characters.seven = 0;
-        characters.eight = 0;
-        if (scanf_return != 6) {
-            printf("You did not enter 6 character.\n");
-            return 1;
+            scanf_return = scanf(" %c %c %c %c %c %c", &characters.one, &characters.two, &characters.three, &characters.four, &characters.five, &characters.six);
+            characters.seven = 0;
+            characters.eight = 0;
+            if (scanf_return != 6) {
+                printf("You did not enter 6 character.\n");
+                return 1;
         }
     }
         
         else if (number_of_char == 7) {
 
-        scanf_return = scanf(" %c %c %c %c %c %c %c", &characters.one, &characters.two, &characters.three, &characters.four, &characters.five, &characters.six, &characters.seven);
-        characters.eight = 0;
+            scanf_return = scanf(" %c %c %c %c %c %c %c", &characters.one, &characters.two, &characters.three, &characters.four, &characters.five, &characters.six, &characters.seven);
+            characters.eight = 0;
 
-        if (scanf_return != 7) {
-            printf("You did not enter 7 character.\n");
-            return 1;
-        }
-        }
+            if (scanf_return != 7) {
+                printf("You did not enter 7 character.\n");
+                return 1;
+                }
+            }
         
         else if (number_of_char == 8) {
 
-        scanf_return = scanf(" %c %c %c %c %c %c %c %c", &characters.one, &characters.two, &characters.three, &characters.four, &characters.five, &characters.six, &characters.seven, &characters.eight);
+            scanf_return = scanf(" %c %c %c %c %c %c %c %c", &characters.one, &characters.two, &characters.three, &characters.four, &characters.five, &characters.six, &characters.seven, &characters.eight);
     
-        if (scanf_return != 8) {
-            printf("You did not enter 8 character.\n");
-            return 1;
-        }
+            if (scanf_return != 8) {
+                printf("You did not enter 8 character.\n");
+                return 1;
+            }
         }
         
         else {
-        printf("You did not Enter 1 - 8 character\n");
-        return 1;
-    }
+            printf("You did not Enter 1 - 8 character\n");
+            return 1;
+        }
+
         printf("\n");
         printf("Enter the shift integer(±): ");
-    
         scanf("%d", &shift);
        
         // First Character
